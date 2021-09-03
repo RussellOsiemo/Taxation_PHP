@@ -1,0 +1,64 @@
+*{
+    font-family: sans-serif;
+    font-size: 18px;
+    align-items: center;
+}
+.personal-info{
+    
+    align-items: center;
+    width: 900px;
+    height: 900px;
+}
+form input{
+    border-radius: 5px;
+    margin: 10px;
+    height: 40px;
+    box-shadow: none;
+    background-color: khaki;
+    transition: 0.5s ease;
+ }
+ form input:hover{
+     box-shadow: 3px blueviolet;
+     transition: 0.5s ease;
+
+ }
+.welcome{
+    text-align: center;
+    font-size:25px;
+    font-weight: 600;
+    font-family: monospace;
+}
+nav{
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: darkgrey;
+    width: 100%;
+    text-align: center;
+}
+nav ul{
+    box-shadow: none;
+    text-decoration: none;
+    width: 100%;
+    margin-top: 0;
+    padding:30px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-right: 45px;
+    margin-left: 45px;
+    font-family: monospace;
+}
+nav ul li{
+    text-decoration: none;
+    padding: 25px;
+    margin: 30px;
+    list-style: none; 
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: monospace;
+}

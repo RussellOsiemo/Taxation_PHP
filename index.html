@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>KRA Portal</title>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            
+           
+        </ul>
+    </nav>
+</head>
+<body>
+    <section class="pesrsonal-info">
+        <h1 class="welcome">Pay Advice Application.</h1>
+        <p style="text-align: center; color:black;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus harum voluptatibus voluptate deleniti maxime odit
+             tempore numquam sapiente exercitationem commodi tenetur, quod quia reiciendis? Obcaecati omnis deserunt ipsa debitis sed?</p>
+        <center>
+    <form class="personal-info" action="index.php" method="POST" style="border: 1px solid blueviolet; border-radius:10px;">
+        <span style="font-size: 20px; color:blueviolet; margin:35px;">Please fill in your details below:</span>
+       <br>
+        <label for="firstname">First Name</label>
+        <input type="text" name="firstname" required> 
+        <label for="lastname">Last Name</label>
+        <input type="text" name="lastname" required> <br>
+        <label for="emailaddress">Email Address</label>
+        <input type="email" name="emailaddress"  required> 
+        <label for="residence">Residence</label>
+        <input type="text" name="residence" required><br>
+        <label for="phonenumber">Phone Number</label>
+        <input type="text" name="phonenumber" required><br>
+        <label for="accno">Account Number</label>
+        <input type="text" name="accno" required>
+
+        <label for="age">Age</label>
+        <input type="number" name="age" required id="age" style="width: 45px; height:30px;"> <br>
+        <label for="job">Job</label>
+        <input type="text" name="job"> 
+        <label for="Gross Pay ">Basic Salary</label>
+        <input type="number" name="basicsalary" required id="monthlysalary"><br>
+
+        <p>For this part please fill the correct information to generate the correct information on your report on taxable income</p>
+        <h2>DEDUCTABLES</h2>
+        <p>In cour calculations we have included deductions of NHIF and NSSF.
+            The NSSF is a fixed amount of 200 shillings and the NHIF is is a constant fee of  1500 shillings.
+        </p>
+        <h2>Other Deductions</h2>
+       <span>For any other deductions made, please fill on the total amount in the field below.</span><br>
+       <label for="other">Other Deductions</label>
+       <input type="number" name="otherdeductions"  id="otherdeductions" style="width: 60px;" ><br>
+        <button class="submit">Calculate</button>
+    </form>
+</center>
+</section>
+<script>
+    document.getElementById("otherdeductions").defaultValue="0";
+    document.getElementById("monthlysalary").defaultValue="10000";
+    document.getElementById("age").defaultValue="18";
+</script>
+</body>
+</html>
